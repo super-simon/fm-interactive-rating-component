@@ -12,34 +12,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
   </head>
   <body>
-    <main class="survey">
-      <div class="container">
-        <form action="">
-          <div class="star">
-            <img class="star__img" src="assets/img/icon-star.svg" alt="star" />
-          </div>
-          <h1>How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-          <radio>
-            <input type="radio" id="star5" name="rate" value="5" />
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star4" name="rate" value="4" />
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star3" name="rate" value="3" />
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star2" name="rate" value="2" />
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star1" name="rate" value="1" />
-            <label for="star1" title="text">1 star</label>
-          </radio>
-          <button>Submit</button>
-        </form>
-      </div>
+    <main class="result container" id="result">
+      <img class="result__img" src="assets/img/illustration-thank-you.svg" alt="phone" />
+      <p class="result__result font-body">
+        You selected <span id="result-place"></span> out of 5
+      </p>
+      <h2 class="result__header font-h-l">Thank you!</h2>
+      <p class="result__description font-body">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </main>
+
+    <main class="survey container" id="survey">
+      <form action="" class="form" id="form">
+        <div class="star">
+          <img class="star__img" src="assets/img/icon-star.svg" alt="star" />
+        </div>
+        <h1 class="form__header font-h-l">How did we do?</h1>
+        <p class="form__description font-body">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rate">
+          <input
+            class="rate__input"
+            id="star1"
+            type="radio"
+            name="rate"
+            value="1"
+          />
+          <label class="rate__label font-rating" for="star1">1</label>
+          <input
+            class="rate__input"
+            id="star2"
+            type="radio"
+            name="rate"
+            value="2"
+          />
+          <label class="rate__label font-rating" for="star2">2</label>
+          <input
+            class="rate__input"
+            id="star3"
+            type="radio"
+            name="rate"
+            value="3"
+          />
+          <label class="rate__label font-rating" for="star3">3</label>
+          <input
+            class="rate__input"
+            id="star4"
+            type="radio"
+            name="rate"
+            value="4"
+          />
+          <label class="rate__label font-rating" for="star4">4</label>
+          <input
+            class="rate__input"
+            id="star5"
+            type="radio"
+            name="rate"
+            value="5"
+          />
+          <label class="rate__label font-rating" for="star5">5</label>
+        </div>
+        <button class="form__submit font-h-m">Submit</button>
+      </form>
     </main>
   </body>
 </html>
