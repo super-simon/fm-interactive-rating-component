@@ -1,0 +1,80 @@
+:root {
+  --color-dark-blue: #262e38;
+  --color-light-grey: #969fad;
+  --color-medium-grey: #7c8798;
+  --color-orange: #fc7614;
+  --color-plure-white: #fff;
+  --color-very-dark-blue: #131518;
+  --color-gradient-black: radial-gradient(at top, #232a34 0%, #181e27 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background-color: var(--color-almost-white);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Overpass";
+  font-style: normal;
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-light-grey);
+}
+
+.font-h-l {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 125%;
+}
+
+.font-rating {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.0125rem;
+}
+
+.font-h-m {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 127%;
+  letter-spacing: 0.125rem;
+}
+
+.font-body {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 160%;
+}
+
+.container {
+  width: 100%;
+  max-width: 25.75rem;
+  border-radius: 1.875rem;
+  margin: 0 auto;
+  background: var(--color-gradient-black);
+  padding: 2rem 2.5rem 2rem 2rem;
+}
+
+.star {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-blue);
+  border-radius: 50%;
+}
+
+.star__img {
+  width: 1.046875rem;
+  height: 1rem;
+}
